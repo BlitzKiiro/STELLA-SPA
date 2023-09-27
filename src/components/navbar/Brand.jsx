@@ -1,15 +1,19 @@
 import Link from "next/link";
 import cn from "classnames";
+import { FlowerIcon } from "../custom/icons";
 
 const Brand = () => {
   return (
     <Link href={"/"}>
       <span
         className={cn(
-          "cursor-pointer font-semibold text-2xl leading-none text-white"
+          "cursor-pointer font-semibold text-2xl  text-white flex gap-1 items-center"
         )}
       >
-        Stella <br /> SPA
+        <FlowerIcon />
+        <p>
+          Stella <br /> SPA
+        </p>
       </span>
     </Link>
   );
