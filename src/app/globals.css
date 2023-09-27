@@ -9,7 +9,7 @@
   @apply after:scale-0 after:hover:scale-100 after:transition;
 }
 
-.body {
+body {
   background-color: #958977;
   color: white;
 }
