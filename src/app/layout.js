@@ -2,6 +2,7 @@ import "./globals.css";
 import "aos/dist/aos.css";
 import { Noto_Kufi_Arabic } from "next/font/google";
 import AOS from "@/components/aos";
+
 export const metadata = {
   title: "Stella SPA - خدمات مساج متكاملة",
   description:

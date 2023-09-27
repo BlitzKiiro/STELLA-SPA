@@ -4,13 +4,12 @@ import Logo from "../../../../public/imgs/logo/logo white.png";
 
 const HomeHeader = ({ children }) => {
   return (
-    <>
+    <div className="bg-[url('/imgs/bg/header.webp')] bg-no-repeat bg-cover">
       {children}
       <div
         className={cn(
-          "bg-[url('/imgs/bg/header.webp')] bg-no-repeat bg-cover",
-          "flex flex-col items-center justify-center md:justify-start md:py-[300px] px-5 gap-[35px]",
-          "w-full h-full min-h-[100vh]",
+          "flex flex-col items-center justify-center md:justify-start py-[80px] md:py-[160px] px-5 gap-[35px]",
+          "w-full h-full ",
           "text-white text-center"
         )}
       >
@@ -46,7 +45,7 @@ const HomeHeader = ({ children }) => {
           </div>
         </button>
       </div>
-    </>
+    </div>
   );
 };
 
