@@ -20,7 +20,7 @@ const Card = ({ img, title, description }) => {
         alt={title}
         fill
         className={cn("transition-all duration-500 scale-[1]", {
-          "scale-[1.1]": isHover,
+          "scale-[1.11]": isHover,
         })}
       />
       <span
