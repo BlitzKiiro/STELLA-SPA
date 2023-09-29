@@ -2,6 +2,7 @@ import "./globals.css";
 import "aos/dist/aos.css";
 import { Cairo } from "next/font/google";
 import AOS from "@/components/aos";
+import Footer from "@/components/footer";
 
 export const metadata = {
   title: "Stella SPA - خدمات مساج متكاملة",
@@ -21,7 +22,10 @@ const cairo = Cairo({
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={cairo.className}>{children}</body>
+      <body className={cairo.className}>
+        {children}
+        <Footer />
+      </body>
       <AOS />
     </html>
   );
