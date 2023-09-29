@@ -14,7 +14,7 @@ const NavLinks = ({ toggleMenu }) => {
       <Link href={"/#"} scroll={false}>
         <li className='navlink'>تواصل معنا</li>
       </Link>
-      <Link href={"/#"} croll={false}>
+      <Link href={"/#"} scroll={false}>
         <li className='navlink'>خدماتنا</li>
       </Link>
       <Link href={"/#"} scroll={false}>

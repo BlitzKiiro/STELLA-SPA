@@ -1,6 +1,6 @@
 import "./globals.css";
 import "aos/dist/aos.css";
-import { Noto_Kufi_Arabic } from "next/font/google";
+import { Cairo } from "next/font/google";
 import AOS from "@/components/aos";
 
 export const metadata = {
@@ -12,8 +12,8 @@ export const metadata = {
   },
 };
 
-const Kufi = Noto_Kufi_Arabic({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+const cairo = Cairo({
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900", "1000"],
   display: "swap",
   subsets: ["arabic"],
 });
@@ -21,7 +21,7 @@ const Kufi = Noto_Kufi_Arabic({
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={Kufi.className}>{children}</body>
+      <body className={cairo.className}>{children}</body>
       <AOS />
     </html>
   );

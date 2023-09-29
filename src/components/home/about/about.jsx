@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       dir='rtl'
-      className='relative w-[90%] mx-auto my-32 flex flex-col md:flex-row items-center'
+      className='relative w-[90%] mx-auto my-32 flex flex-col md:flex-row items-center md:items-end'
       data-aos='fade-up'
       data-aos-duration='1200'
     >
@@ -14,10 +14,10 @@ const About = () => {
           <BranchIcon />
         </div>
         <div>
-          <span className='text-white text-[28px] md:text-[38px] font-medium  leading-[48px] '>
+          <span className='text-white text-[20px] md:text-[30px] font-medium  leading-[48px] '>
             في مركز ستيلا سبا{" "}
           </span>
-          <span className='text-white text-center text-[28px] md:text-[38px] font-light  leading-[48px]'>
+          <span className='text-white text-[20px]  md:text-[30px] font-light  leading-[48px]'>
             نقوم بتقديم أفضل خدمات التدليك والمساج بأيدي أمهر المختصين الذين
             يعملون بحرفية تلبي كافة احتياجاتك للوصول للراحة المنشودة بأفضل
             التقنيات والطرق الحديثة والمبتكرة والعلاجية المستخدمة
