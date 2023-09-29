@@ -18,7 +18,7 @@ const HomeHeader = ({ children }) => {
           data-aos='zoom-in-up'
           data-aos-duration='500'
         >
-          ستيلا سبا للمساج
+          ستيلا سبا
         </h1>
         <Image
           src={Logo}

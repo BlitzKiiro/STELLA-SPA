@@ -10,7 +10,7 @@ import Contact from "@/components/home/contact";
 
 export default function Home() {
   return (
-    <main>
+    <main style={{ overflowX: "hidden" }}>
       <HomeHeader>
         <Navbar />
       </HomeHeader>
