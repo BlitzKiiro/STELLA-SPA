@@ -4,6 +4,7 @@ import { useRef } from "react";
 
 import { useHover } from "usehooks-ts";
 import cn from "classnames";
+import Link from "next/link";
 
 const Card = ({ img, title, description }) => {
   const hoverRef = useRef(null);
@@ -20,7 +21,7 @@ const Card = ({ img, title, description }) => {
         alt={title}
         fill
         className={cn("transition-all duration-500 scale-[1]", {
-          "scale-[1.11]": isHover,
+          "scale-[1.2]": isHover,
         })}
       />
       <span
@@ -31,9 +32,13 @@ const Card = ({ img, title, description }) => {
         )}
       >
         <p className='text-xl cursor-default'>{title}</p>
-        <button className='absolute bottom-20 border border-white rounded-md py-1 px-6'>
+        <Link
+          href={`https://api.whatsapp.com/send/?phone=9660564527479&text&type=phone_number&app_absent=0&text=السلام عليكم، أرغب في حجز ${title}`}
+          target='_blank_res'
+          className='absolute bottom-20 border border-white rounded-md py-1 px-6'
+        >
           احجز الأن
-        </button>
+        </Link>
       </span>
     </div>
   );
