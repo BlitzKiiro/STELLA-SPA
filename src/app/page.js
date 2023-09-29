@@ -5,7 +5,8 @@ import HomeHeader from "@/components/home/header";
 import Navbar from "@/components/navbar";
 import SeparatorImage from "@/components/home/Separator Image";
 import Services from "@/components/home/services";
-import Reservation from "@/components/reservation";
+import Reservation from "@/components/home/reservation";
+import Contact from "@/components/home/contact";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <SeparatorImage img={MassageImg} />
       <Services />
       <Reservation />
+      <Contact />
     </main>
   );
 }
