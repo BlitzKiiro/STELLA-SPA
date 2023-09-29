@@ -11,13 +11,13 @@ const NavLinks = ({ toggleMenu }) => {
       )}
       onClickCapture={toggleMenu}
     >
-      <Link href={"/#"} scroll={false}>
+      <Link href={"/#contact"}>
         <li className='navlink'>تواصل معنا</li>
       </Link>
-      <Link href={"/#"} scroll={false}>
+      <Link href={"/#services"}>
         <li className='navlink'>خدماتنا</li>
       </Link>
-      <Link href={"/#"} scroll={false}>
+      <Link href={"/#about"}>
         <li className='navlink'>من نحن</li>
       </Link>
     </ul>

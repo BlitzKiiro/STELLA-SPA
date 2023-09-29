@@ -3,7 +3,10 @@ import { WavesIcon, WhatsAppIcon } from "../../custom/icons";
 
 const Reservation = () => {
   return (
-    <div className="bg-[url('/imgs/preview/pc.jpg')] bg-fixed bg-no-repeat bg-cover h-[60vh] flex flex-col justify-center items-center gap-10 p-6 text-center">
+    <div
+      id='booking'
+      className="bg-[url('/imgs/preview/pc.jpg')] bg-fixed bg-no-repeat bg-cover h-[60vh] flex flex-col justify-center items-center gap-10 p-6 text-center"
+    >
       <span data-aos='zoom-in-up' data-aos-duration='500'>
         <WavesIcon />
       </span>

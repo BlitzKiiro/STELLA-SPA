@@ -3,7 +3,11 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <div className='my-10 md:my-48 px-6 md:px-48 flex justify-center' dir='rtl'>
+    <div
+      className='my-10 md:my-48 px-6 md:px-48 flex justify-center'
+      dir='rtl'
+      id='contact'
+    >
       <div className='grid grid-cols-2 gap-y-10 w-[80%]'>
         <div className='col-span-2 md:col-span-1 '>
           <h2

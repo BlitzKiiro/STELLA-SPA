@@ -40,9 +40,12 @@ const HomeHeader = ({ children }) => {
           data-aos-duration='1200'
           className='w-[207px] h-11 px-[60px] bg-white rounded-[3px] border border-white justify-center items-center gap-2 inline-flex'
         >
-          <div className="text-neutral-700 text-[15px] font-bold font-['Playfair Display'] uppercase tracking-tight">
+          <a
+            href='#booking'
+            className="text-neutral-700 text-[15px] font-bold font-['Playfair Display'] uppercase tracking-tight"
+          >
             احجز الأن
-          </div>
+          </a>
         </button>
       </div>
     </div>

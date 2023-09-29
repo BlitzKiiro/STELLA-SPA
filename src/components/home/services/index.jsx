@@ -15,6 +15,7 @@ const Services = () => {
       className='relative w-[90%] mx-auto my-32 flex flex-col md:flex-row items-center '
       data-aos='fade-up'
       data-aos-duration='1200'
+      id='services'
     >
       <p className='md:rotate-90 text-center mb-[30px]'>خدماتنا </p>
       <div className='mx-auto text-center '>

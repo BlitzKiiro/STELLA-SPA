@@ -7,6 +7,7 @@ const About = () => {
       className='relative w-[90%] mx-auto my-32 flex flex-col md:flex-row items-center md:items-end'
       data-aos='fade-up'
       data-aos-duration='1200'
+      id='about'
     >
       <p className='md:rotate-90 text-center mb-[30px]'>من نحن</p>
       <div className='mx-auto w-[70%] text-center '>
