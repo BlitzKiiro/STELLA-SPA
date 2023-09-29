@@ -2,18 +2,25 @@
 import Image from "next/image";
 import { useRef } from "react";
 
-import { useHover } from "usehooks-ts";
+import { useHover, useIntersectionObserver, useMediaQuery } from "usehooks-ts";
 import cn from "classnames";
 import Link from "next/link";
 
 const Card = ({ img, title, description }) => {
-  const hoverRef = useRef(null);
-  const isHover = useHover(hoverRef);
+  const isMobileScreen = window.innerWidth <= 767;
+
+  console.log(isMobileScreen);
+
+  const ref = useRef(null);
+  const isHover = useHover(ref);
+  const entry = useIntersectionObserver(ref, {});
+  const isVisible = !!entry?.isIntersecting;
+
   return (
     <div
       data-aos='fade-left'
       data-aos-duration='1200'
-      ref={hoverRef}
+      ref={ref}
       className='drop-shadow w-[350px] h-[300px] overflow-hidden relative mx-auto '
     >
       <Image
@@ -21,14 +28,14 @@ const Card = ({ img, title, description }) => {
         alt={title}
         fill
         className={cn("transition-all duration-500 scale-[1]", {
-          "!scale-[1.1]": isHover,
+          "!scale-[1.1]": isMobileScreen ? isVisible : isHover,
         })}
       />
       <span
         className={cn(
           "transition-all duration-500 ",
           "absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-[rgba(0,0,0,0.5)]  opacity-0 ",
-          { " opacity-100 ": isHover }
+          { " opacity-100 ": isMobileScreen ? isVisible : isHover }
         )}
       >
         <p className='text-xl cursor-default'>{title}</p>
