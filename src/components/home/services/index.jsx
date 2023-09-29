@@ -1,9 +1,9 @@
 import AirMassage from "../../../../public/imgs/services/air.png";
-import FeetMassage from "../../../../public/imgs/services/feet.webp";
-import MorocoMassage from "../../../../public/imgs/services/moroco.webp";
-import RocksMassage from "../../../../public/imgs/services/rocks.webp";
-import SwedishMassage from "../../../../public/imgs/services/Swedish.webp";
-import TailandMassage from "../../../../public/imgs/services/Tailand.webp";
+import FeetMassage from "../../../../public/imgs/services/feet.jpg";
+import MorocoMassage from "../../../../public/imgs/services/moroco.jpg";
+import RocksMassage from "../../../../public/imgs/services/rocks.jpg";
+import SwedishMassage from "../../../../public/imgs/services/swedish.jpg";
+import TailandMassage from "../../../../public/imgs/services/tailand.jpg";
 
 import Card from "@/components/custom/Card";
 import { WiresIcon } from "@/components/custom/icons";
