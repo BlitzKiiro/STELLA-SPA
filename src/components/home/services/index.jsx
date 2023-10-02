@@ -4,6 +4,11 @@ import MorocoMassage from "../../../../public/imgs/services/moroco.jpg";
 import RocksMassage from "../../../../public/imgs/services/rocks.jpg";
 import SwedishMassage from "../../../../public/imgs/services/swedish.jpg";
 import TailandMassage from "../../../../public/imgs/services/tailand.jpg";
+import BedCare from "../../../../public/imgs/services/bed care.jpg";
+import Bundle1 from "../../../../public/imgs/services/bundle 1.jpg";
+import Bundle2 from "../../../../public/imgs/services/bundle 2.jpg";
+import Bundle3 from "../../../../public/imgs/services/bundle 3.jpg";
+import vip from "../../../../public/imgs/services/vip.jpg";
 
 import Card from "@/components/custom/Card";
 import { WiresIcon } from "@/components/custom/icons";
@@ -64,6 +69,35 @@ const Services = () => {
             description={
               "لا بدّ أنك سمعت عن المساج التايلندي الشهير المشهور بفوائده السريعة فهو الأفضل بين أنواع عديدة من المساجات العالمية لاختياره بعد يوم متعب أو عناء سفر أو أسبوع عمل."
             }
+          />
+          <Card
+            img={BedCare}
+            title={"بدكير منكير"}
+            description={
+              "نحتاج جميعنا إلى العناية بصحة اليدين والقدمين و الرجال أحوج لعناية شاملة باليدين والقدمين والأظافر بسبب جهود العمل وأعباء الحياة اليومية."
+            }
+          />
+          <Card
+            img={Bundle1}
+            title={"باقة 1"}
+            description={"مساج سويدي + حمام مغربي "}
+          />
+          <Card
+            img={Bundle2}
+            title={"باقة 2"}
+            description='مساج تايلاني + بدكير منكير '
+          />
+          <Card
+            img={Bundle3}
+            title={"باقة 3 "}
+            description='مساج مكس سويدي+ تايلاندي +احجار ساحنه + كاسات هوا'
+          />
+          <Card
+            img={vip}
+            title={"مساج VIP "}
+            description='تنظيف عميق للبشره ماسك الارجان ماسك الترطيب ماسك فيتامين سي 
+            _حمام مغربي بالصابون البلدي والليفه المغربيه
+           _ مساج احجار ساخنه  مساج  استرخائي  بدكير منكير'
           />
         </div>
       </div>
