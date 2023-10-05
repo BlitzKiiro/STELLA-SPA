@@ -3,6 +3,8 @@ import "aos/dist/aos.css";
 import { Cairo } from "next/font/google";
 import AOS from "@/components/aos";
 import Footer from "@/components/footer";
+import { GoogleTagScript } from "./GoogleTag";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Stella SPA - خدمات مساج متكاملة",
@@ -22,9 +24,12 @@ const cairo = Cairo({
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
+      <GoogleTagScript />
       <body className={cairo.className}>
         {children}
         <Footer />
+        <GoogleTagScript />
+        <Analytics />
       </body>
       <AOS />
     </html>
