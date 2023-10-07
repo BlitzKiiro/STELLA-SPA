@@ -6,7 +6,7 @@ const Social = () => {
     <div className='flex gap-5 items-center'>
       <Link
         target='_blank_instagram'
-        href={"https://www.tiktok.com/@stellaspa6"}
+        href={"https://www.tiktok.com/@stella_spaa23"}
       >
         <TiktokIcon />
       </Link>
